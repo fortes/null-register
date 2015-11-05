@@ -1,0 +1,28 @@
+{
+  "name": "null-register",
+  "version": "0.0.1",
+  "description": "Make node ignore require() statements for certain file extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test/index.js"
+  },
+  "keywords": [
+    "css",
+    "jsdom",
+    "register",
+    "require",
+    "webpack"
+  ],
+  "author": "Filipe Fortes",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fortes/null-register.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fortes/null-register/issues"
+  }
+}
