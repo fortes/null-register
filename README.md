@@ -17,12 +17,18 @@ This works just fine when you're building with webpack to run in the browser. Bu
 }
 ```
 
-## Environment variables
-
-Null register can read extensions from the `$NODE_NULL_REGISTER` environment variable. For example, to use `null-loader` with Mocha to stub out CSS and LESS requires:
+Then just `require('null-register')` somewhere in your code. This is useful for mocha, for example:
 
 ```
-NODE_NULL_REGISTER=".css .less" mocha --compilers css:null-loader
+mocha --compilers css:null-register
+```
+
+## Environment variables
+
+Null register can read extensions from the `$NODE_NULL_REGISTER` environment variable. For example, to use `null-register` with Mocha to stub out CSS and LESS requires:
+
+```
+NODE_NULL_REGISTER=".css .less" mocha --compilers css:null-register
 ```
 
 ## Programmatic Usage
@@ -30,7 +36,7 @@ NODE_NULL_REGISTER=".css .less" mocha --compilers css:null-loader
 Simply make the following call *before* calling `require` for the given extensions:
 
 ```
-require('null-loader')(['.css', '.less']);
+require('null-register')(['.css', '.less']);
 ```
 
 # Changelog
