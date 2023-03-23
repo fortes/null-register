@@ -1,3 +1,7 @@
+# No longer maintained
+
+This is no longer maintained, code is archived and available for forking though.
+
 # Why?
 
 Say you're using [style-loader](https://github.com/webpack/style-loader) in order to do something neat like:
